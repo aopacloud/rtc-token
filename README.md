@@ -10,21 +10,7 @@
 必须有AppID和AppCert才能生成token，参考本仓库代码，代码是Go语言编写的，注意加密算法的版本。
 
 ## rtc网关接入地址
-### 测试环境
-```
-"{\"signaling\":\"wss://rtc-dev-gateway.aopacloud.net:6080/rtc/channel\", \"rtconfig\":\"https://rtc-dev-gateway.aopacloud.net:6080/rtc/get_rtc_config\", \"log\":\"https://rtc-dev-gateway.aopacloud.net:6080/ali/v1/get_upload_url\", \"quic\":\"rtc-dev-gateway.aopacloud.net:6081\", \"report\":\"https://rtc-dev-gateway.aopacloud.net:6080/rtc/rtc_event_report\"}"
-```
-### 正式环境
-国内用户和国外用户使用不同的地址，国内用户走了专线加速。
-
-**国内用户**
-```
-"{\"signaling\":\"wss://rtc-gateway-oversea.aopacloud.net:6080/rtc/channel\", \"rtconfig\":\"https://rtc-gateway-oversea.aopacloud.net:6080/rtc/get_rtc_config\", \"log\":\"https://rtc-gateway-oversea.aopacloud.net:6080/ali/v1/get_upload_url\", \"quic\":\"rtc-gateway-oversea-quic.aopacloud.net:16081\", \"report\":\"https://rtc-gateway-oversea.aopacloud.net:6080/rtc/rtc_event_report\"}"
-```
-**国外用户**
-```
-"{\"signaling\":\"wss://rtc-gateway.aopacloud.sg:6080/rtc/channel\", \"rtconfig\":\"https://rtc-gateway.aopacloud.sg:6080/rtc/get_rtc_config\", \"log\":\"https://rtc-gateway.aopacloud.sg:6080/ali/v1/get_upload_url\", \"quic\":\"rtc-gateway-quic.aopacloud.sg:16081\", \"report\":\"https://rtc-gateway.aopacloud.sg:6080/rtc/rtc_event_report\"}"
-```
+上Slack找 **Haibo 雷公**（haibo@aopacloud.sg）
 
 ## rtc灰度控制
 灰度控制是用来确定用户应该使用自研RTC还是声网RTC。
